@@ -6,5 +6,6 @@ port = 10000
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((host,port))
     while True:
-        s.sendall(b'holaa')
+        data= input(" > ").encode(encoding="utf-8")
+        s.sendall(data)
         t.sleep(1)

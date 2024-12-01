@@ -15,5 +15,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 continue
             elif not data:
                 break
-            print (f"r > {data!r} ")
+            data=data.decode('utf-8')
+            print (f"r > {data!s} ")
 print(f"connection closed")
