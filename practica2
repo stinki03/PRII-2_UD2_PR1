@@ -9,3 +9,39 @@ UDP buffer size:  208 KByte (default)
 [  1] 0.0000-10.0154 sec  1.25 MBytes  1.05 Mbits/sec
 [  1] Sent 896 datagrams
 [  3] WARNING: did not receive ack of last datagram after 10 tries.
+
+root@labdisca19:/home/labdisca/Descargas/PRII-2_UD2_PR1-master# iperf -c 10.0.0.18 -u -b 120M
+------------------------------------------------------------
+Client connecting to 10.0.0.18, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 93.46 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 10.0.0.19 port 36234 connected with 10.0.0.18 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0032 sec   113 MBytes  95.1 Mbits/sec
+[  1] Sent 80932 datagrams
+[  3] WARNING: did not receive ack of last datagram after 10 tries.
+
+root@labdisca19:/home/labdisca/Descargas/PRII-2_UD2_PR1-master# iperf -c 192.168.1.112 -u
+------------------------------------------------------------
+Client connecting to 192.168.1.112, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 11215.21 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.1.107 port 41814 connected with 192.168.1.112 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0156 sec  1.25 MBytes  1.05 Mbits/sec
+[  1] Sent 896 datagrams
+[  3] WARNING: did not receive ack of last datagram after 10 tries.
+root@labdisca19:/home/labdisca/Descargas/PRII-2_UD2_PR1-master# iperf -c 192.168.1.112 -u -b 120M
+------------------------------------------------------------
+Client connecting to 192.168.1.112, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 93.46 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.1.107 port 40908 connected with 192.168.1.112 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0400 sec  7.12 MBytes  5.95 Mbits/sec
+[  1] Sent 5082 datagrams
+[  3] WARNING: did not receive ack of last datagram after 10 tries.
+root@labdisca19:/home/labdisca/Descargas/PRII-2_UD2_PR1-master# 
